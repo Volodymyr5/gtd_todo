@@ -1,1 +1,2 @@
-# gtd_todo
+# GTD ToDo
+Implementation of the GTD concept using React Native

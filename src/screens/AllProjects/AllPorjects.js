@@ -1,24 +1,25 @@
-import {List} from 'react-native-paper';
+import { List } from 'react-native-paper';
 import React from 'react';
-import OneProjectLisItem from '../../components/OneProjectLisItem';
+import AllProjectLisItem from './AllProjectLisItem';
 
 const projects = [
     {
         id: 1,
         category: 1,
-        title: '111 Lorem Ipsum is simply',
+        title: '1110 Lorem Ipsum is simply',
     },
     {
         id: 2,
         category: 2,
-        title: '222 Lorem Ipsum is simply',
+        title: '2220 Lorem Ipsum is simply',
     },
 ];
 
 export default function AllProjectsScreen({ navigation }) {
-    const listItems = projects.map((project) => {
-        return <OneProjectLisItem project={project} key={project.id}/>;
-    });
+    const listItems = projects.map((project) => <AllProjectLisItem
+        project={project}
+        key={project.id}
+    />);
 
     return (
         <List.Section>
